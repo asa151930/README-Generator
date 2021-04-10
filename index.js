@@ -66,7 +66,7 @@ inquirer.prompt([
     }) => {
         const readme_style = `# ${title} <br>
 
-<img src="(https://img.shields.io/badge/License-${license}-red.svg)](https://opensource.org/licenses/${license})"></img>
+<img src="https://img.shields.io/badge/License-${license}-red.svg">
 <br></br>
 
 <h2>Description</h2> 
@@ -107,7 +107,7 @@ When creating an open source project on GitHub, it is important to have a qualit
   <h2 id="Tests">Tests</h2>
   <p>${test}</p>
   <h2 id="Contact">Contact</h2> 
-  <p>If you have any questions, please contact me with the information provided below. </p> <br>
+  <p>If you have any questions, please reach out to the information provided below. </p> <br>
   GitHub: @${username} <br>
   Email: ${email}`; 
 
