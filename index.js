@@ -61,3 +61,8 @@ inquirer.prompt([
         }
     ]);
 
+// function to write the readme file
+
+
+// function to start the program
+
