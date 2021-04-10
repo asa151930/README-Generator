@@ -66,7 +66,7 @@ inquirer.prompt([
     }) => {
         const readme_style = `# ${title} <br>
 
-<img src="(https://img.shields.io/badge/License-${license}-red.svg)](https://opensource.org/licenses/${license})>
+<img src="(https://img.shields.io/badge/License-${license}-red.svg)](https://opensource.org/licenses/${license})">
 <br></br>
 
 <h2>Description</h2> 
