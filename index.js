@@ -66,7 +66,7 @@ inquirer.prompt([
     }) => {
         const readme_style = `# ${title} <br>
 
-<img src="(https://img.shields.io/badge/License-${license}-red.svg)](https://opensource.org/licenses/${license})">
+<img src="(https://img.shields.io/badge/License-${license}-red.svg)](https://opensource.org/licenses/${license})"></img>
 <br></br>
 
 <h2>Description</h2> 
@@ -87,7 +87,7 @@ When creating an open source project on GitHub, it is important to have a qualit
 
   <h2 id="Installation">Installation</h2>  
   GIVEN a command-line application that accepts user input 
-  - WHEN I am prompted for information about my application repository, 
+  WHEN I am prompted for information about my application repository, 
   THEN a quality, professional README.md is generated with the title of your project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions. 
   WHEN I enter my project title, THEN this is displayed as the title of the README. 
   WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions, 
@@ -95,7 +95,8 @@ When creating an open source project on GitHub, it is important to have a qualit
   WHEN I choose a license for my application from a list of options, THEN a badge for that license is added hear the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under. 
   WHEN I enter my GitHub username, THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile. 
   WHEN I enter my email address, THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions. 
-  WHEN I click on the links in the Table of Contents, THEN I am taken to the corresponding section of the README.                       
+  WHEN I click on the links in the Table of Contents, THEN I am taken to the corresponding section of the README.       
+
   <p>${installation}</p>
   <h2 id="Usage">Usage</h2>
   <p>${usage}</p> 
