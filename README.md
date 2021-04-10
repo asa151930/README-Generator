@@ -1,14 +1,15 @@
 # HOMEWORK 9: README GENERATOR
+https://asa151930.github.io/README-Generator/
 
-* TASK
+* TASK <br>
 Create a command-line application that dynamically generates a professional README.md file from a user's input using the Inquirer package. <br>
 
- * USER STORY
+ * USER STORY <br>
 AS A developer <br>
 I WANT a README generator <br>
 SO THAT I can quickly create a professional README for a new project <br>
 
-* ACCEPTANCE CRITERIA
+* ACCEPTANCE CRITERIA <br>
 GIVEN a command-line application that accepts user input <br>
 WHEN I am prompted for information about my application repository <br>
 THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions <br>
@@ -23,4 +24,4 @@ THEN this is added to the section of the README entitled Questions, with a link 
 WHEN I enter my email address <br>
 THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions <br>
 WHEN I click on the links in the Table of Contents <br>
-THEN I am taken to the corresponding section of the README
+THEN I am taken to the corresponding section of the README 
