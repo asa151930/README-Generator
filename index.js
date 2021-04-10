@@ -45,7 +45,7 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'username',
-        message: 'Enter your Git-Hub Username:',
+        message: 'Enter your GitHub Username:',
     },
     {
         type: 'input',
@@ -65,28 +65,36 @@ inquirer.prompt([
         email
     }) => {
         const readme_style = `# ${title}
+[![License: ${license}]
+<br></br>
 
-    # Table of Contents
+<p>Description</p> 
+${description}
+<br></br>
 
-    * Project Link
-    https://${username}.github.io/README-Generator/
+<h2>Table of Contents</h2>
+  <ul> 
+   <li><a href="#Installation">Installation</a></li> 
+   <li><a href="#Usage">Usage</a></li>   
+   <li><a href="#License">License</a></li>   
+   <li><a href="#Contributor">Contributor</a></li>   
+   <li><a href="#Tests">Tests</a></li>   
+   <li><a href="#Questions">Questions</a></li>                         
+  </ul>
 
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Contributor](#contributor)
-    * [License](#license)
-
-    * Description: ${description}
-    * Installation: ${installation}
-    * Usage: ${usage}
-    * Contributor: ${contributor}
-    * Test: ${test}
-    * License: ${license} license. 
-    
-    # Contact Information
-
-    # GitHub: ${username}
-    # Email: ${email}`;
+  <h2 id="Installation">Installation</h2>                         
+  <p>${installation}</p>
+  <h2 id="Usage">Usage</h2>
+  <p>${usage}</p> 
+  <h2 id="License">License</h2>
+  <p>The license used for the project is <a href="./README.md">${license} license. </a></p>
+  <h2 id="Contributor">Contributor</h2>
+  <p>${contributor}</p>
+  <h2 id="Tests">Tests</h2>
+  <h3>To test this project, follow these directions:</h3>
+  <p>${test}</p>
+  <h2 id="Questions">Questions</h2>
+  <p style="strong">If you have any questions, contact ${email} directly.</p>`
 
         newFile(title, readme_style);
 
@@ -97,8 +105,74 @@ function newFile(filename, data) {
     fs.writeFile(`${filename.toLowerCase().split(' ').join('')}.md`, data,
         (err) => err ? console.log(err) :
             console.log('\n Success!')
-
-
     )
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
