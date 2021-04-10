@@ -14,46 +14,45 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'description',
-        message: 'What does the project do? ',
+        message: 'What does the project do?',
     },
     {
         type: 'input',
         name: 'installation',
-        message: 'In a few words, describe the installation process: ',
+        message: 'In a few words, describe the installation process:',
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'What is the project used for: ',
+        message: 'What is the project used for:',
     },
     {
         type: 'input',
         name: 'contributor',
-        message: 'Name the contributors if any: ',
+        message: 'Name the contributors if any:',
     },
     {
         type: 'input',
         name: 'test',
-        message: 'Any test instructions available? ',
+        message: 'Any test instructions available?',
     },
     {
         type: 'list',
         name: 'license',
-        message: 'Enter the type of licenses used using the given options: ',
+        message: 'Enter the type of license used from the given choices:',
         choices: ['Apache', 'Boost', 'BSD', 'GNU', 'IBM', 'MIT', 'ISC']
     },
     {
         type: 'input',
         name: 'username',
-        message: 'Enter your Git-Hub Username: ',
+        message: 'Enter your Git-Hub Username:',
     },
     {
         type: 'input',
         name: 'email',
-        message: 'Enter your Email Address: ',
+        message: 'Enter your Email Address:',
     }
 ])
-
     .then(({
         title,
         description,
@@ -65,14 +64,17 @@ inquirer.prompt([
         username,
         email
     }) => {
-        const style = `# ${title}
+        const readme_style = `# ${title}
 
-    # [Installation](#installation)
+    # Table of Contents
+    
     # [Description] (#description)
+    # [Installation](#installation)
     # [Usage](#Usage)
     # [Contribution] (#contribution)
     # [Test] (#test)
     # [License] (#license)
+
     # Installation
     ${installation}
     ## Usage
@@ -91,15 +93,17 @@ inquirer.prompt([
     # GitHub: ${username}
     # Email: ${email}`;
 
-        newFile(title, style);
+        newFile(title, readme_style);
 
     });
 
 // function to write the readme file
 function newFile(filename, data) {
     fs.writeFile(`${filename.toLowerCase().split(' ').join('')}.md`, data,
-        (err) => err ? console.log(err) : console.log('Success!')
+        (err) => err ? console.log(err) :
+            console.log('\n Success!')
 
-        
-    )};
+
+    )
+};
 
