@@ -65,10 +65,10 @@ inquirer.prompt([
         email
     }) => {
         const readme_style = `# ${title} <br>
-${license}]
+<img src="(https://img.shields.io/badge/License-${license}-red.svg)](https://opensource.org/licenses/${license})
 <br></br>
 
-<h3>Description</h3> 
+<h2>Description</h2> 
 <p>${description}</p>
 <br></br>
 
@@ -93,11 +93,10 @@ ${license}]
   <h2 id="Tests">Tests</h2>
   <h3>To test this project, follow these directions:</h3>
   <p>${test}</p>
-  <h2 id="Questions">Questions</h2>
-  <p style="strong">If you have any questions <br></br></p>
   <h2>Contact<h2> 
+  <h3>If you have any questions, please contact me with the information provided below. <h3> <br>
   GitHub: @${username} <br>
-  Email: ${email}`;
+  Email: ${email}`; 
 
         newFile(title, readme_style);
 
