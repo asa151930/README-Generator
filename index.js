@@ -1,9 +1,13 @@
 // added inquirer to ask questions 
 const inquirer = require('inquirer');
 
+// function to write the readme file
 const fs = require('fs');
+
+// added to generate the style for the Readme
 const readme_style = require('./readme_style');
 
+// added for user to answer the questions to generate the Readme 
 inquirer.prompt([
         {
             type: 'input',
