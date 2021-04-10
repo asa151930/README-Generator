@@ -64,12 +64,12 @@ inquirer.prompt([
         username,
         email
     }) => {
-        const readme_style = `# ${title}
-[![License: ${license}]
+        const readme_style = `# ${title} <br>
+${license}]
 <br></br>
 
-<p>Description</p> 
-${description}
+<h3>Description</h3> 
+<p>${description}</p>
 <br></br>
 
 <h2>Table of Contents</h2>
@@ -87,14 +87,17 @@ ${description}
   <h2 id="Usage">Usage</h2>
   <p>${usage}</p> 
   <h2 id="License">License</h2>
-  <p>The license used for the project is <a href="./README.md">${license} license. </a></p>
+  <p>The license used for the project is <a href="./README.md">${license}</a> license.</p>
   <h2 id="Contributor">Contributor</h2>
   <p>${contributor}</p>
   <h2 id="Tests">Tests</h2>
   <h3>To test this project, follow these directions:</h3>
   <p>${test}</p>
   <h2 id="Questions">Questions</h2>
-  <p style="strong">If you have any questions, contact ${email} directly.</p>`
+  <p style="strong">If you have any questions <br></br></p>
+  <h2>Contact<h2> 
+  GitHub: @${username} <br>
+  Email: ${email}`;
 
         newFile(title, readme_style);
 
