@@ -67,7 +67,7 @@ inquirer.prompt([
         const readme_style = `# ${title}
 
     # Table of Contents
-    
+
     # [Description] (#description)
     # [Installation](#installation)
     # [Usage](#Usage)
@@ -91,7 +91,8 @@ inquirer.prompt([
     # Contact
 
     # GitHub: ${username}
-    # Email: ${email}`;
+    # Email: ${email}
+    # Link:  https://asa151930.github.io/README-Generator/ `;
 
         newFile(title, readme_style);
 
