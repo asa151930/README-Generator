@@ -71,12 +71,17 @@ inquirer.prompt([
     * Project Link
     https://${username}.github.io/README-Generator/
 
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [Contributor](#contributor)
+    * [License](#license)
+
     * Description: ${description}
     * Installation: ${installation}
     * Usage: ${usage}
-    * Contribution: ${contributor}
+    * Contributor: ${contributor}
     * Test: ${test}
-    * License: This project is licensed under ${license} license. 
+    * License: ${license} license. 
     
     # Contact Information
 
