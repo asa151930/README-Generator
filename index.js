@@ -68,7 +68,7 @@ inquirer.prompt([
 
     # Table of Contents
 
-    * ${title}
+    * Project Link
     https://${username}.github.io/README-Generator/
 
     * Description: ${description}
@@ -78,7 +78,7 @@ inquirer.prompt([
     * Test: ${test}
     * License: This project is licensed under ${license} license. 
     
-    # Contact Info
+    # Contact Information
 
     # GitHub: ${username}
     # Email: ${email}`;
