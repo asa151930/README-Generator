@@ -63,10 +63,13 @@ inquirer.prompt([
             name: 'email',
             message: 'Enter your Email Address: ',
         }
-    ]);
+    ])
 
 // function to write the readme file
-
+.then((data) => {
+    fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) => 
+    (err) ? console.log(err) : console.log('Success!'))
+});
 
 // function to start the program
 
