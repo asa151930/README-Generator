@@ -79,7 +79,7 @@ inquirer.prompt([
    <li><a href="#License">License</a></li>   
    <li><a href="#Contributor">Contributor</a></li>   
    <li><a href="#Tests">Tests</a></li>   
-   <li><a href="#Questions">Questions</a></li>                         
+   <li><a href="#Contact">Contact</a></li>                         
   </ul>
 
   <h2 id="Installation">Installation</h2>                         
@@ -91,10 +91,9 @@ inquirer.prompt([
   <h2 id="Contributor">Contributor</h2>
   <p>${contributor}</p>
   <h2 id="Tests">Tests</h2>
-  <h3>To test this project, follow these directions:</h3>
   <p>${test}</p>
-  <h2>Contact<h2> 
-  <h3>If you have any questions, please contact me with the information provided below. <h3> <br>
+  <h2 id="Contact">Contact</h2> 
+  <p>If you have any questions, please contact me with the information provided below. </p> <br>
   GitHub: @${username} <br>
   Email: ${email}`; 
 
