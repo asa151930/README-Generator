@@ -1,8 +1,9 @@
 
 // add inquirer to ask questions 
 const inquirer = require('inquirer');
-const fs = require('fs');
 
+const fs = require('fs');
+const readme_style = require('./readme_style');
 
 inquirer
     .prompt([
@@ -47,7 +48,27 @@ inquirer
             name: 'license',
             message: 'Enter the type of licenses used using the given options: ',
             choices: [
-                
+              Apache,
+              Boost,
+              BSD,
+              GNU,
+              IBM,
+              MIT, 
+              Mozilla,
+              ISC,
             ]
+        },
+
+        {
+            type: 'input',
+            name: 'username',
+            message: 'Enter your Git-Hub Username: ',
+        },
+
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Enter your Email Address: ',
         }
     ]);
+
