@@ -68,18 +68,20 @@ inquirer.prompt([
 
     # Table of Contents
 
-    ## Description: ${description}
-    ## Installation: ${installation}
-    ## Usage: ${usage}
-    ## Contribution: ${contributor}
-    ## Test: ${test}
-    ## License: ${license}
+    * ${title}
+    https://${username}.github.io/README-Generator/
+
+    * Description: ${description}
+    * Installation: ${installation}
+    * Usage: ${usage}
+    * Contribution: ${contributor}
+    * Test: ${test}
+    * License: This project is licensed under ${license} license. 
     
     # Contact Info
 
     # GitHub: ${username}
-    # Email: ${email}
-    # Link:  https://asa151930.github.io/README-Generator/ `;
+    # Email: ${email}`;
 
         newFile(title, readme_style);
 
@@ -95,9 +97,3 @@ function newFile(filename, data) {
     )
 };
 
-//  # [Description] (#description)
-//# [Installation](#installation)
-//# [Usage](#Usage)
-//# [Contribution] (#contribution)
-//# [Test] (#test)
-//# [License] (#license)
