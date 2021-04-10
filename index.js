@@ -4,10 +4,6 @@ const inquirer = require('inquirer');
 // function to write the readme file
 const fs = require('fs');
 
-// added to generate the style for the Readme
-const readme_style = require('./readme_style');
-const { writeFile } = require('node:fs');
-
 // added for user to answer the questions to generate the Readme 
 inquirer.prompt([
     {
@@ -18,7 +14,7 @@ inquirer.prompt([
     {
         type: 'input',
         name: 'description',
-        message: 'What does the project do? Enter a brief description: ',
+        message: 'What does the project do? ',
     },
     {
         type: 'input',
@@ -44,7 +40,7 @@ inquirer.prompt([
         type: 'list',
         name: 'license',
         message: 'Enter the type of licenses used using the given options: ',
-        choices: ['Apache','Boost','BSD','GNU','IBM','MIT','ISC']
+        choices: ['Apache', 'Boost', 'BSD', 'GNU', 'IBM', 'MIT', 'ISC']
     },
     {
         type: 'input',
@@ -58,17 +54,52 @@ inquirer.prompt([
     }
 ])
 
-    // function to write the readme file
-    .then((data) => {
-        fs.writeFile(filename, JSON.stringify(data, null, '\t'), (err) =>
-            (err) ? console.log(err) : console.log('Success!'))
+    .then(({
+        title,
+        description,
+        installation,
+        usage,
+        contributor,
+        test,
+        license,
+        username,
+        email
+    }) => {
+        const style = `# ${title}
+
+    # [Installation](#installation)
+    # [Description] (#description)
+    # [Usage](#Usage)
+    # [Contribution] (#contribution)
+    # [Test] (#test)
+    # [License] (#license)
+    # Installation
+    ${installation}
+    ## Usage
+    ${usage}
+    ## Contribution
+    ${contributor}
+    ## Description
+    ${description}
+    ## Test
+    ${test}
+    ## License
+    ${license}
+    
+    # Contact
+
+    # GitHub: ${username}
+    # Email: ${email}`;
+
+        newFile(title, style);
+
     });
 
-// function to start the program
-function init() {
-    inquirer.prompt()
-    .then(function(data) {
-        writeFile("README.md", readme_style(data))
-        console.log(data)
-    })
-}
+// function to write the readme file
+function newFile(filename, data) {
+    fs.writeFile(`${filename.toLowerCase().split(' ').join('')}.md`, data,
+        (err) => err ? console.log(err) : console.log('Success!')
+
+        
+    )};
+
