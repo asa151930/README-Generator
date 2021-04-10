@@ -1,4 +1,4 @@
-//console.log("Hello node.js");
+
 
 // create node modules
 
@@ -6,17 +6,17 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+const readme_style = require("./readme_style");
+
 inquirer
     .prompt([
         {
             type: '',
-            name: '',
             message: 'What is the title of your Project?',
+            name: '',
+            
         },
         {
-            type: '',
-            message: '',
-            name: '',
-            message: 'What is your name?',
+            
         }
-    ])
+    ]);
