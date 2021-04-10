@@ -1,29 +1,16 @@
-# README-GENERATOR
+# Readme-Generator
 
     # Table of Contents
 
-    # [Description] (#description)
-    # [Installation](#installation)
-    # [Usage](#Usage)
-    # [Contribution] (#contribution)
-    # [Test] (#test)
-    # [License] (#license)
+    ## Description: creates a new file for users to enter their ifo
+    ## Installation: 
+    ## Usage: fsdfsdf
+    ## Contribution: sdfsfsd
+    ## Test: sdfsdf
+    ## License: GNU
+    
+    # Contact Info
 
-    # Installation
-    
-    ## Usage
-    
-    ## Contribution
-    
-    ## Description
-    
-    ## Test
-    
-    ## License
-    ISC
-    
-    # Contact
-
-    # GitHub: 
-    # Email: 
-    # Link: https://asa151930.github.io/README-Generator/ 
+    # GitHub: sfsfsfsdf
+    # Email: sdfsfsdfsf
+    # Link:  https://asa151930.github.io/README-Generator/ 

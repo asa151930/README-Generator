@@ -68,27 +68,14 @@ inquirer.prompt([
 
     # Table of Contents
 
-    # [Description] (#description)
-    # [Installation](#installation)
-    # [Usage](#Usage)
-    # [Contribution] (#contribution)
-    # [Test] (#test)
-    # [License] (#license)
-
-    # Installation
-    ${installation}
-    ## Usage
-    ${usage}
-    ## Contribution
-    ${contributor}
-    ## Description
-    ${description}
-    ## Test
-    ${test}
-    ## License
-    ${license}
+    ## Description: ${description}
+    ## Installation: ${installation}
+    ## Usage: ${usage}
+    ## Contribution: ${contributor}
+    ## Test: ${test}
+    ## License: ${license}
     
-    # Contact
+    # Contact Info
 
     # GitHub: ${username}
     # Email: ${email}
@@ -108,3 +95,9 @@ function newFile(filename, data) {
     )
 };
 
+//  # [Description] (#description)
+//# [Installation](#installation)
+//# [Usage](#Usage)
+//# [Contribution] (#contribution)
+//# [Test] (#test)
+//# [License] (#license)
