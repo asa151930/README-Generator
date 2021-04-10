@@ -44,15 +44,7 @@ inquirer.prompt([
         type: 'list',
         name: 'license',
         message: 'Enter the type of licenses used using the given options: ',
-        choices: [
-            Apache,
-            Boost,
-            BSD,
-            GNU,
-            IBM,
-            MIT,
-            ISC,
-        ]
+        choices: ['Apache','Boost','BSD','GNU','IBM','MIT','ISC']
     },
     {
         type: 'input',

@@ -1,7 +1,5 @@
-const read = function () {
-    console.log("Readme is being read");
-}
 
 
 
-module.export = read;
+
+module.exports = readme_style;
