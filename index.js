@@ -93,7 +93,7 @@ When creating an open source project on GitHub, it is important to have a qualit
  
   <h2 id="Usage">Usage</h2>
   <p> When you run node index.js, the application uses the inquirer package to prompt you in the command line with a series of questions about your GitHub and about your project. </p>
-  How-to-video: https://github.com/asa151930/README-Generator/blob/main/readme_generator_video/readme_generator.mp4 <br>
+  How-to-video: https://github.com/asa151930/README-Generator/blob/main/readme_generator_video/readme_generator.mp4 <br></br>
   <p>${usage}</p>
 
   <h2 id="License">License</h2>
@@ -106,7 +106,7 @@ When creating an open source project on GitHub, it is important to have a qualit
   <h2 id="Tests">Tests</h2>
   <p>${test}</p>
   
-  <h2 id="Questions">Questions</h2> 
+  <h2 id="Questions">Questions?</h2> 
   <p>If you have any questions, please reach out to the information provided below. </p> <br>
   
   GitHub: @${username} <br>
